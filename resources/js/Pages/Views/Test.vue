@@ -1,4 +1,5 @@
 <script>
+import { route } from '../../../../vendor/tightenco/ziggy/src/js';
 import { useAppOptionStore } from '../stores/app-option';
 
 export default {

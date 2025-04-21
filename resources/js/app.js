@@ -20,6 +20,7 @@ import '../scss/app.scss';
 import { createApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
 import { createPinia } from 'pinia';
+import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 
 // Importar Bootstrap JS
 import * as bootstrap from 'bootstrap';
@@ -36,6 +37,7 @@ createInertiaApp({
     
     app.use(plugin); // Plugin Inertia
     app.use(pinia); // Plugin Pinia
+    app.use(ZiggyVue); // Plugin ZiggyVue
     
     app.mount(el);
     setTimeout(() => {
